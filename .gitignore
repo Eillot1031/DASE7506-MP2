@@ -5,3 +5,11 @@ venv/
 runs/
 .DS_Store
 Thumbs.db
+.venv-ml/
+.venv-eval/
+tmp/
+code/checkpoints/cv*/
+experiments/cross_validation/*-curves.npy
+experiments/cross_validation/*.npy
+report/*.docx
+experiments/published.json

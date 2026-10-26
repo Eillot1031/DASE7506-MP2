@@ -1,0 +1,48 @@
+{
+  "members": [
+    {
+      "file": "ema42.npz",
+      "kind": "nn",
+      "mode": "full",
+      "temperature": 9.023807525634766,
+      "weight": 0.3333333333333333
+    },
+    {
+      "file": "ema_context73.npz",
+      "kind": "nn",
+      "mode": "interaction",
+      "temperature": 0.9596447944641113,
+      "weight": 0.3333333333333333
+    },
+    {
+      "file": "context17.npz",
+      "kind": "nn",
+      "mode": "interaction",
+      "temperature": 14.052910804748535,
+      "weight": 0.3333333333333333
+    }
+  ],
+  "answer_aggregation": 0.5,
+  "selection": {
+    "name": "forward_step3",
+    "answer_aggregation": 0.5,
+    "members": [
+      "ema42",
+      "ema_context73",
+      "context17"
+    ],
+    "accuracy": 94.73684210526316,
+    "hard_accuracy": 88.16901408450704,
+    "hard_n": 355,
+    "correct": 756
+  },
+  "arithmetic_penalty": {
+    "column": 1,
+    "pooling": 0.0,
+    "weight": 0.5,
+    "accuracy": 83.96404919583728,
+    "hard_accuracy": 83.96404919583728,
+    "hard_n": 2114,
+    "correct": 1775
+  }
+}

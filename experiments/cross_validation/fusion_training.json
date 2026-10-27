@@ -1,0 +1,63 @@
+{
+  "candidates": [
+    {
+      "depth": 2,
+      "iterations": 150,
+      "accuracy": 81.5042573320719,
+      "hard_accuracy": 81.5042573320719,
+      "hard_n": 2114,
+      "correct": 1723
+    },
+    {
+      "depth": 2,
+      "iterations": 400,
+      "accuracy": 81.26773888363293,
+      "hard_accuracy": 81.26773888363293,
+      "hard_n": 2114,
+      "correct": 1718
+    },
+    {
+      "depth": 2,
+      "iterations": 800,
+      "accuracy": 81.36234626300852,
+      "hard_accuracy": 81.36234626300852,
+      "hard_n": 2114,
+      "correct": 1720
+    },
+    {
+      "depth": 3,
+      "iterations": 150,
+      "accuracy": 81.5515610217597,
+      "hard_accuracy": 81.5515610217597,
+      "hard_n": 2114,
+      "correct": 1724
+    },
+    {
+      "depth": 3,
+      "iterations": 400,
+      "accuracy": 80.93661305581836,
+      "hard_accuracy": 80.93661305581836,
+      "hard_n": 2114,
+      "correct": 1711
+    },
+    {
+      "depth": 3,
+      "iterations": 800,
+      "accuracy": 81.12582781456953,
+      "hard_accuracy": 81.12582781456953,
+      "hard_n": 2114,
+      "correct": 1715
+    }
+  ],
+  "selected": {
+    "depth": 3,
+    "iterations": 150,
+    "accuracy": 81.5515610217597,
+    "hard_accuracy": 81.5515610217597,
+    "hard_n": 2114,
+    "correct": 1724
+  },
+  "seconds": 8.749590498000543,
+  "export_error": 1.5123481365009184e-06,
+  "caveat": "Meta cross-validation reuses base OOF scores whose epoch choices were made on these train groups. It is a development estimate, not nested unbiased validation."
+}

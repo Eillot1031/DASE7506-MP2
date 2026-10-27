@@ -1,0 +1,101 @@
+{
+  "seconds": 40.38208469100027,
+  "results": [
+    {
+      "trees": 150,
+      "pooling": 0.0,
+      "accuracy": 74.73982970671712,
+      "hard_accuracy": 74.73982970671712,
+      "hard_n": 2114,
+      "correct": 1580
+    },
+    {
+      "trees": 150,
+      "pooling": 0.5,
+      "accuracy": 75.07095553453169,
+      "hard_accuracy": 75.07095553453169,
+      "hard_n": 2114,
+      "correct": 1587
+    },
+    {
+      "trees": 150,
+      "pooling": 1.0,
+      "accuracy": 75.26017029328288,
+      "hard_accuracy": 75.26017029328288,
+      "hard_n": 2114,
+      "correct": 1591
+    },
+    {
+      "trees": 300,
+      "pooling": 0.0,
+      "accuracy": 76.25354777672659,
+      "hard_accuracy": 76.25354777672659,
+      "hard_n": 2114,
+      "correct": 1612
+    },
+    {
+      "trees": 300,
+      "pooling": 0.5,
+      "accuracy": 77.01040681173131,
+      "hard_accuracy": 77.01040681173131,
+      "hard_n": 2114,
+      "correct": 1628
+    },
+    {
+      "trees": 300,
+      "pooling": 1.0,
+      "accuracy": 77.76726584673605,
+      "hard_accuracy": 77.76726584673605,
+      "hard_n": 2114,
+      "correct": 1644
+    },
+    {
+      "trees": 500,
+      "pooling": 0.0,
+      "accuracy": 77.81456953642385,
+      "hard_accuracy": 77.81456953642385,
+      "hard_n": 2114,
+      "correct": 1645
+    },
+    {
+      "trees": 500,
+      "pooling": 0.5,
+      "accuracy": 78.42951750236519,
+      "hard_accuracy": 78.42951750236519,
+      "hard_n": 2114,
+      "correct": 1658
+    },
+    {
+      "trees": 500,
+      "pooling": 1.0,
+      "accuracy": 79.18637653736991,
+      "hard_accuracy": 79.18637653736991,
+      "hard_n": 2114,
+      "correct": 1674
+    },
+    {
+      "trees": 700,
+      "pooling": 0.0,
+      "accuracy": 78.2876064333018,
+      "hard_accuracy": 78.2876064333018,
+      "hard_n": 2114,
+      "correct": 1655
+    },
+    {
+      "trees": 700,
+      "pooling": 0.5,
+      "accuracy": 79.18637653736991,
+      "hard_accuracy": 79.18637653736991,
+      "hard_n": 2114,
+      "correct": 1674
+    },
+    {
+      "trees": 700,
+      "pooling": 1.0,
+      "accuracy": 79.3282876064333,
+      "hard_accuracy": 79.3282876064333,
+      "hard_n": 2114,
+      "correct": 1677
+    }
+  ]
+}

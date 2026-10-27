@@ -1,0 +1,26 @@
+{
+  "frozen_at_utc": "2026-10-26T18:11:33.458289+00:00",
+  "selection_split": "train-only grouped cross-validation",
+  "prior_test_evaluations": 3,
+  "prior_result": "experiments/initial/test-score.json",
+  "disclosure": "Development continued after the initial aggregate test score was seen. No test error cases or references were used to fit weights, design features, or select configurations. The final score is not an untouched one-shot holdout estimate.",
+  "files": {
+    "code/submission.py": "01fda404be45cf665079e1a4f9be5394289f0b6e16d8ecdcfa06dc94090610ff",
+    "code/features.py": "8f0c83b4b321e514bd3170970b36be974b51bc92a9252a17f5881dbe3ce5a45d",
+    "code/common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "code/predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "code/score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "code/train.py": "f83c681079b74e929ff4e5da74b02a7542f3d463fa300dfa93edcd5302048fd1",
+    "code/develop.py": "923f2a845991847edd248637d15f4414fd4efafa96b630b187f750a57abdf01b",
+    "code/checkpoints/final/cv_arithmetic_17.npz": "3bc5108c7f98c8a46075477584eee7f28bd947b8f1d0e8d221957d50a4f637e2",
+    "code/checkpoints/final/cv_arithmetic_42.npz": "e18ecc97f99fc4fc369c32afbd1bd7a3fcbfa701e1a78b8a61fd201c5376400e",
+    "code/checkpoints/final/cv_arithmetic_73.npz": "e36925fd6002fea4b5dc9382ec52882d5913753677b168ab55f956e114ec7329",
+    "code/checkpoints/final/cv_context_list_17.npz": "461d64ee29b7b3a6bf86bc994691173e9d2a06b0410c0b398c86511dfebf2c70",
+    "code/checkpoints/final/cv_context_list_42.npz": "b909dcf3d0aa82125f2a08dc2127ff6f89646139b234c1af3ed4039d8a2bac8e",
+    "code/checkpoints/final/cv_context_list_73.npz": "8d30d13cbc08194a44023546a88b485d36d8a6d689d9f8afd1cfa6437fc3dfa3",
+    "code/checkpoints/final/cv_norm_17.npz": "c5f877695ae2003707501509b43626630412261f81f3eec5e036d5fb965dac8b",
+    "code/checkpoints/final/cv_norm_42.npz": "39c3258ec81db73ee8493d12d3c5c9c234c89f049d00c2294074d95212d4bbd6",
+    "code/checkpoints/final/cv_norm_73.npz": "ecf2e2cd15aafdea523943ff8477820595fe306c0f659ec2539c13399c3b8e3d",
+    "code/checkpoints/final/ensemble.json": "fcf0af66dc8537dfea11756648275075cc6ad4246b207fa7ae07aacf3cdc851d"
+  }
+}

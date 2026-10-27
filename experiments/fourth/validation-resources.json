@@ -1,0 +1,60 @@
+{
+  "split": "validation",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "threads": 4,
+  "prediction_process_seconds": 1.871753495000121,
+  "scoring_process_seconds": 0.06839476200002537,
+  "total_seconds": 1.9401482570001463,
+  "asset_file_bytes": 9866849,
+  "asset_files": {
+    "cv_arithmetic_17.npz": {
+      "bytes": 1211956,
+      "sha256": "3bc5108c7f98c8a46075477584eee7f28bd947b8f1d0e8d221957d50a4f637e2"
+    },
+    "cv_arithmetic_42.npz": {
+      "bytes": 1211956,
+      "sha256": "e18ecc97f99fc4fc369c32afbd1bd7a3fcbfa701e1a78b8a61fd201c5376400e"
+    },
+    "cv_arithmetic_73.npz": {
+      "bytes": 1211956,
+      "sha256": "e36925fd6002fea4b5dc9382ec52882d5913753677b168ab55f956e114ec7329"
+    },
+    "cv_context_list_17.npz": {
+      "bytes": 878132,
+      "sha256": "461d64ee29b7b3a6bf86bc994691173e9d2a06b0410c0b398c86511dfebf2c70"
+    },
+    "cv_context_list_42.npz": {
+      "bytes": 878132,
+      "sha256": "b909dcf3d0aa82125f2a08dc2127ff6f89646139b234c1af3ed4039d8a2bac8e"
+    },
+    "cv_context_list_73.npz": {
+      "bytes": 878132,
+      "sha256": "8d30d13cbc08194a44023546a88b485d36d8a6d689d9f8afd1cfa6437fc3dfa3"
+    },
+    "cv_norm_17.npz": {
+      "bytes": 1196356,
+      "sha256": "c5f877695ae2003707501509b43626630412261f81f3eec5e036d5fb965dac8b"
+    },
+    "cv_norm_42.npz": {
+      "bytes": 1196356,
+      "sha256": "39c3258ec81db73ee8493d12d3c5c9c234c89f049d00c2294074d95212d4bbd6"
+    },
+    "cv_norm_73.npz": {
+      "bytes": 1196356,
+      "sha256": "ecf2e2cd15aafdea523943ff8477820595fe306c0f659ec2539c13399c3b8e3d"
+    },
+    "ensemble.json": {
+      "bytes": 7517,
+      "sha256": "fcf0af66dc8537dfea11756648275075cc6ad4246b207fa7ae07aacf3cdc851d"
+    }
+  },
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "validation",
+    "correct": 742,
+    "n": 798,
+    "accuracy": 92.98245614035088,
+    "scoring_seconds": 0.022518044999742415
+  }
+}

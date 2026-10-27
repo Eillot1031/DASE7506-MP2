@@ -1,0 +1,20 @@
+{
+  "frozen_at_utc": "2026-10-26T18:02:54.527997+00:00",
+  "selection_split": "validation",
+  "prior_test_evaluations": 1,
+  "prior_result": "experiments/initial/test-score.json",
+  "disclosure": "Development continued after the initial aggregate test score was seen. No test error cases or references were used to fit weights, design features, or select configurations. The final score is not an untouched one-shot holdout estimate.",
+  "files": {
+    "code/submission.py": "01fda404be45cf665079e1a4f9be5394289f0b6e16d8ecdcfa06dc94090610ff",
+    "code/features.py": "e4114b2d274dbc8784048633d2d302adcbff188b0bc94f1c0838a95b9a7cf658",
+    "code/common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "code/predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "code/score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "code/train.py": "f83c681079b74e929ff4e5da74b02a7542f3d463fa300dfa93edcd5302048fd1",
+    "code/develop.py": "923f2a845991847edd248637d15f4414fd4efafa96b630b187f750a57abdf01b",
+    "code/checkpoints/final/context17.npz": "d772b0eea76b0351de9d2345bfe511e47a27982b4b2e578241e709c3e8a3fd32",
+    "code/checkpoints/final/ema42.npz": "f40a5f3e58dce35792e3ba3c21ad9f77b1c174e1bac3dc720dfe0cd77fc52da3",
+    "code/checkpoints/final/ema_context73.npz": "5bd28faab7316349a50358520ea125f3532e4731d13e3ff810b2c117deeb9d4e",
+    "code/checkpoints/final/ensemble.json": "4d6192ad0b5812d98456697d8dbc0c09af45ec0605c8e0a1896583fb8f848400"
+  }
+}

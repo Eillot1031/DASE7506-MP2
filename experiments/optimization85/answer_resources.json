@@ -1,0 +1,12 @@
+{
+  "seconds": 58.948560600000064,
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "torch": "2.9.0+cu130",
+  "folds": 5,
+  "split_seed": 2026,
+  "refit_seeds": [
+    17,
+    42,
+    73
+  ]
+}

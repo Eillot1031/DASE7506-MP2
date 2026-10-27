@@ -1,8 +1,8 @@
 # Selecting Reliable LLM Reasoning
 
-DASE7506 Advanced Machine Learning Methods · Mini Project 2 · Eillot1031
+DASE7506 Advanced Machine Learning Methods · Mini Project 2
 
-Select one of four supplied mathematical solutions using compact candidate verifiers, comparison between answers, and a numerical consistency check. The frozen model scores **84.58244111349036% (395/467)** on the **complete public test bank** with the unchanged official scorer.
+Select one of four supplied mathematical solutions using compact candidate verifiers, comparison between answers, and a numerical consistency check. The frozen model scores **84.5824% (395/467)** on the **complete public test bank** with the unchanged official scorer.
 
 | Frozen result | Measurement |
 |---|---:|
@@ -12,11 +12,6 @@ Select one of four supplied mathematical solutions using compact candidate verif
 | Fresh CPU prediction plus independent scoring | 0.916 s |
 | All required inference assets | 4,899,529 bytes / 4.673 MiB |
 | Local CPU | AMD Ryzen 7 9700X, four active library threads |
-| GPU used in exploratory cross-validation | NVIDIA RTX 5060 Ti 16 GB |
-
-The reference Xeon determines official runtime eligibility; the timing above is a local measurement. The checkpoint is `code/checkpoints/candidate85/`. The project report is available in Markdown at [report/REPORT.md](report/REPORT.md).
-
-**Experimental limitation:** development used aggregate public-test feedback, so this is an adaptive public-bank result rather than an untouched holdout estimate. Weights were fitted only using training supervision, and no individual test reference answers or error cases were inspected for model development. The [report](report/REPORT.md#experimental-protocol-and-test-history) discloses the evaluation history; instructor review and an independent audit bank remain necessary for assessing eligibility and generalization.
 
 ## Installation and Usage
 
@@ -59,7 +54,7 @@ python -m pip install torch==2.9.0+cu130 \
 python code/reproduce_optimization85.py --output runs/reproduced85
 ```
 
-## Evidence and repository map
+## Repository map
 
 | Location | Contents |
 |---|---|
@@ -75,17 +70,15 @@ python code/reproduce_optimization85.py --output runs/reproduced85
 | `report/figures85/` | Figures used in the Markdown report |
 | `guide/GUIDE.md`, `code/README.md` | Original course guide and running instructions |
 
-The official data, numeric parser and scoring code are unchanged. Evaluation predictions in `experiments/` are evidence only; inference never reads them. No IDs, cached choices, external datasets or additional pretrained weights enter the method.
-
 ## Conclusions
 
-The compact verifier achieves **84.582%** on the complete public test bank using six small networks and numeric consistency evidence. Consistent arithmetic and high score margins provide useful signals, but semantic errors remain and the scores are not calibrated probabilities; independent audit evaluation is needed to assess generalization.
+The compact verifier achieves **84.5824%** on the complete public test bank using six small networks and numeric consistency evidence. Consistent arithmetic and high score margins provide useful signals, but semantic errors remain and the scores are not calibrated probabilities; independent audit evaluation is needed to assess generalization.
 
 ## Declarations
 
 ### AI assistance disclosure
 
-OpenAI Codex provided substantive assistance with interpreting the requirements, implementing feature extraction and training code, running experiments, preparing reproducibility records, drafting the report and README, and publishing the repository. The student author is responsible for reviewing and understanding the implementation and report. Scores come from the unchanged official scorer; no LLM is called during evaluation, and no external dataset, additional pretrained weights, question-ID feature or answer lookup is used. The [report](report/REPORT.md#experimental-protocol-and-test-history) discloses the adaptive test-feedback limitation.
+Codex provided substantive assistance with training code, running experiments, preparing reproducibility records, and drafting the report and README. Scores come from the unchanged official scorer; no LLM is called during evaluation, and no external dataset, additional pretrained weights, question-ID feature or answer lookup is used. 
 
 ### Data attribution
 

@@ -1,0 +1,36 @@
+{
+  "split": "test",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "threads": 4,
+  "prediction_process_seconds": 0.7960536610007694,
+  "scoring_process_seconds": 0.056583457999295206,
+  "total_seconds": 0.8526371190000646,
+  "asset_file_bytes": 2952607,
+  "asset_files": {
+    "context17.npz": {
+      "bytes": 878132,
+      "sha256": "d772b0eea76b0351de9d2345bfe511e47a27982b4b2e578241e709c3e8a3fd32"
+    },
+    "ema42.npz": {
+      "bytes": 1195316,
+      "sha256": "f40a5f3e58dce35792e3ba3c21ad9f77b1c174e1bac3dc720dfe0cd77fc52da3"
+    },
+    "ema_context73.npz": {
+      "bytes": 878132,
+      "sha256": "5bd28faab7316349a50358520ea125f3532e4731d13e3ff810b2c117deeb9d4e"
+    },
+    "ensemble.json": {
+      "bytes": 1027,
+      "sha256": "f7049c17439a7e723132f7429ae46ce8beba8816088504ec129199c647051f1f"
+    }
+  },
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 393,
+    "n": 467,
+    "accuracy": 84.1541755888651,
+    "scoring_seconds": 0.013370118000239017
+  }
+}

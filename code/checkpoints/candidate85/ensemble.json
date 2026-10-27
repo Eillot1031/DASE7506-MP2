@@ -1,0 +1,68 @@
+{
+  "members": [
+    {
+      "file": "ema42.npz",
+      "kind": "nn",
+      "mode": "full",
+      "temperature": 9.023807525634766,
+      "weight": 0.3
+    },
+    {
+      "file": "ema_context73.npz",
+      "kind": "nn",
+      "mode": "interaction",
+      "temperature": 0.9596447944641113,
+      "weight": 0.3
+    },
+    {
+      "file": "context17.npz",
+      "kind": "nn",
+      "mode": "interaction",
+      "temperature": 14.052910804748535,
+      "weight": 0.3
+    },
+    {
+      "kind": "set_nn",
+      "mode": "full",
+      "file": "set_bce64_17.npz",
+      "temperature": 4.383659839630127,
+      "weight": 0.03333333333333333
+    },
+    {
+      "kind": "set_nn",
+      "mode": "full",
+      "file": "set_bce64_42.npz",
+      "temperature": 4.383659839630127,
+      "weight": 0.03333333333333333
+    },
+    {
+      "kind": "set_nn",
+      "mode": "full",
+      "file": "set_bce64_73.npz",
+      "temperature": 4.383659839630127,
+      "weight": 0.03333333333333333
+    }
+  ],
+  "answer_aggregation": 0.5,
+  "arithmetic_penalty": {
+    "version": "v2",
+    "column": 1,
+    "symbol_weight": 0.0,
+    "pooling": 1.0,
+    "weight": 0.5,
+    "accuracy": 84.24787133396404,
+    "hard_accuracy": 84.24787133396404,
+    "hard_n": 2114,
+    "correct": 1781
+  },
+  "selection": {
+    "family": "set",
+    "pooling": 0.5,
+    "weight": 0.1,
+    "accuracy": 94.86215538847118,
+    "hard_accuracy": 88.45070422535211,
+    "hard_n": 355,
+    "correct": 757
+  },
+  "selection_rule": "Train-only five-fold CV chose the new family and epoch. Validation selected one of 17 fixed blends; train OOF selected the arithmetic rule. Earlier aggregate public test feedback had already been seen."
+}

@@ -1,0 +1,213 @@
+{
+  "total_seconds": 36.43661636900015,
+  "records": [
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 0.1,
+      "gamma": 0.0001,
+      "validation": {
+        "accuracy": 90.10025062656642,
+        "hard_accuracy": 77.74647887323944,
+        "hard_n": 355,
+        "correct": 719
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 0.1,
+      "gamma": 0.0003,
+      "validation": {
+        "accuracy": 91.47869674185463,
+        "hard_accuracy": 80.84507042253522,
+        "hard_n": 355,
+        "correct": 730
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 0.1,
+      "gamma": 0.001,
+      "validation": {
+        "accuracy": 90.72681704260651,
+        "hard_accuracy": 79.15492957746478,
+        "hard_n": 355,
+        "correct": 724
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 0.1,
+      "gamma": 0.003,
+      "validation": {
+        "accuracy": 89.09774436090225,
+        "hard_accuracy": 75.49295774647888,
+        "hard_n": 355,
+        "correct": 711
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 1.0,
+      "gamma": 0.0001,
+      "validation": {
+        "accuracy": 91.35338345864662,
+        "hard_accuracy": 80.56338028169014,
+        "hard_n": 355,
+        "correct": 729
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 1.0,
+      "gamma": 0.0003,
+      "validation": {
+        "accuracy": 91.72932330827068,
+        "hard_accuracy": 81.40845070422536,
+        "hard_n": 355,
+        "correct": 732
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 1.0,
+      "gamma": 0.001,
+      "validation": {
+        "accuracy": 92.23057644110276,
+        "hard_accuracy": 82.53521126760563,
+        "hard_n": 355,
+        "correct": 736
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 1.0,
+      "gamma": 0.003,
+      "validation": {
+        "accuracy": 91.35338345864662,
+        "hard_accuracy": 80.56338028169014,
+        "hard_n": 355,
+        "correct": 729
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 10.0,
+      "gamma": 0.0001,
+      "validation": {
+        "accuracy": 91.8546365914787,
+        "hard_accuracy": 81.69014084507042,
+        "hard_n": 355,
+        "correct": 733
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 10.0,
+      "gamma": 0.0003,
+      "validation": {
+        "accuracy": 91.2280701754386,
+        "hard_accuracy": 80.28169014084507,
+        "hard_n": 355,
+        "correct": 728
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 10.0,
+      "gamma": 0.001,
+      "validation": {
+        "accuracy": 89.72431077694236,
+        "hard_accuracy": 76.90140845070422,
+        "hard_n": 355,
+        "correct": 716
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 10.0,
+      "gamma": 0.003,
+      "validation": {
+        "accuracy": 90.6015037593985,
+        "hard_accuracy": 78.87323943661971,
+        "hard_n": 355,
+        "correct": 723
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 100.0,
+      "gamma": 0.0001,
+      "validation": {
+        "accuracy": 90.85213032581454,
+        "hard_accuracy": 79.43661971830986,
+        "hard_n": 355,
+        "correct": 725
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 100.0,
+      "gamma": 0.0003,
+      "validation": {
+        "accuracy": 89.22305764411027,
+        "hard_accuracy": 75.77464788732394,
+        "hard_n": 355,
+        "correct": 712
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 100.0,
+      "gamma": 0.001,
+      "validation": {
+        "accuracy": 89.97493734335839,
+        "hard_accuracy": 77.46478873239437,
+        "hard_n": 355,
+        "correct": 718
+      },
+      "seed": 42
+    },
+    {
+      "kind": "kernel",
+      "mode": "full",
+      "C": 100.0,
+      "gamma": 0.003,
+      "validation": {
+        "accuracy": 90.85213032581454,
+        "hard_accuracy": 79.43661971830986,
+        "hard_n": 355,
+        "correct": 725
+      },
+      "seed": 42
+    }
+  ]
+}

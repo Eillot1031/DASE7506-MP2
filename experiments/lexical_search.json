@@ -1,0 +1,53 @@
+{
+  "seconds": 14.96865507199982,
+  "records": [
+    {
+      "kind": "lexical",
+      "mode": "lexical",
+      "C": 0.1,
+      "validation": {
+        "accuracy": 85.08771929824562,
+        "hard_accuracy": 66.47887323943662,
+        "hard_n": 355,
+        "correct": 679
+      },
+      "seed": 42
+    },
+    {
+      "kind": "lexical",
+      "mode": "lexical",
+      "C": 1.0,
+      "validation": {
+        "accuracy": 85.71428571428571,
+        "hard_accuracy": 67.88732394366197,
+        "hard_n": 355,
+        "correct": 684
+      },
+      "seed": 42
+    },
+    {
+      "kind": "lexical",
+      "mode": "lexical",
+      "C": 10.0,
+      "validation": {
+        "accuracy": 86.09022556390977,
+        "hard_accuracy": 68.73239436619718,
+        "hard_n": 355,
+        "correct": 687
+      },
+      "seed": 42
+    },
+    {
+      "kind": "lexical",
+      "mode": "lexical",
+      "C": 100.0,
+      "validation": {
+        "accuracy": 85.33834586466165,
+        "hard_accuracy": 67.04225352112677,
+        "hard_n": 355,
+        "correct": 681
+      },
+      "seed": 42
+    }
+  ]
+}

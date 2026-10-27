@@ -1,0 +1,67 @@
+{
+  "ema42": {
+    "mode": "full",
+    "seed": 42,
+    "width": 128,
+    "epochs": 160,
+    "lr": 0.001,
+    "decay": 0.01,
+    "dropout": 0.4,
+    "loss": "bce",
+    "save_epoch": null,
+    "hard_only": true,
+    "valid_only": true,
+    "ema": 0.99,
+    "out": "runs/ema42",
+    "best_epoch": 46,
+    "validation": {
+      "accuracy": 93.85964912280701,
+      "hard_accuracy": 86.19718309859155,
+      "hard_n": 355,
+      "correct": 749
+    }
+  },
+  "ema_context73": {
+    "mode": "interaction",
+    "seed": 73,
+    "width": 64,
+    "epochs": 160,
+    "lr": 0.001,
+    "decay": 0.01,
+    "dropout": 0.4,
+    "loss": "bce",
+    "save_epoch": null,
+    "hard_only": true,
+    "valid_only": true,
+    "ema": 0.99,
+    "out": "runs/ema_context73",
+    "best_epoch": 8,
+    "validation": {
+      "accuracy": 93.85964912280701,
+      "hard_accuracy": 86.19718309859155,
+      "hard_n": 355,
+      "correct": 749
+    }
+  },
+  "context17": {
+    "mode": "interaction",
+    "seed": 17,
+    "width": 64,
+    "epochs": 160,
+    "lr": 0.001,
+    "decay": 0.1,
+    "dropout": 0.4,
+    "loss": "mixedlist",
+    "save_epoch": null,
+    "hard_only": true,
+    "valid_only": true,
+    "out": "runs/context17",
+    "best_epoch": 132,
+    "validation": {
+      "accuracy": 93.23308270676692,
+      "hard_accuracy": 84.78873239436619,
+      "hard_n": 355,
+      "correct": 744
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "frozen_at_utc": "2026-10-26T18:24:30.410910+00:00",
+  "selection_split": "train-only grouped cross-validation",
+  "prior_test_evaluations": 4,
+  "prior_result": "experiments/initial/test-score.json",
+  "disclosure": "Development continued after the initial aggregate test score was seen. No test error cases or references were used to fit weights, design features, or select configurations. The final score is not an untouched one-shot holdout estimate.",
+  "files": {
+    "code/submission.py": "794584e2124ad67470c2b9e17a17a7d8263de4df7c767a4f56dd116528c1a560",
+    "code/features.py": "b3aa81203ac221b11c29343249fb50cad61fb33e76e796ab2df5a05f1642a0f2",
+    "code/common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "code/predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "code/score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "code/train.py": "f83c681079b74e929ff4e5da74b02a7542f3d463fa300dfa93edcd5302048fd1",
+    "code/develop.py": "923f2a845991847edd248637d15f4414fd4efafa96b630b187f750a57abdf01b",
+    "code/checkpoints/final/cv_all_input_17.npz": "7956b0c1c613bc90cb297681c61d15d8a86923babc2bc37649e9447006977af1",
+    "code/checkpoints/final/cv_all_input_42.npz": "0920930d5f28181dc5e76d3e9dfa6277f11220d17cab399588bcb33d9e6a9ece",
+    "code/checkpoints/final/cv_all_input_73.npz": "b39cc3d940eb7590543b07ae1637c9e84dd0f2f7962f30dfe6454ba2ae4a2796",
+    "code/checkpoints/final/cv_pair_17.npz": "edb07b4a7fd4a235848ce5eaa98f3f81be21f0c912a6ed32760b7a9d2be3a946",
+    "code/checkpoints/final/cv_pair_42.npz": "7df41e52583168fed1f046ebb9014dcfdddebaea3f839b64bef4716cebc4ce9c",
+    "code/checkpoints/final/cv_pair_73.npz": "bdc482b1d430dd4d06c466e0638c75c099c5505f0ca7296514f99d7d31a3c912",
+    "code/checkpoints/final/ensemble.json": "ce99842e25419e8905ec3fb2a06e2e2fe5de0c4cb2781deb4436cfe11ea79872"
+  }
+}

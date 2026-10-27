@@ -1,0 +1,6 @@
+{
+  "export_max_abs_error": 4.76837158203125e-07,
+  "prediction_parity": true,
+  "arbitrary_ids_and_batch_size": true,
+  "candidate_permutation": true
+}

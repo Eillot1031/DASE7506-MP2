@@ -1,0 +1,16 @@
+{
+  "frozen_at_utc": "2026-10-26T17:54:55.708474+00:00",
+  "selection_split": "validation",
+  "test_evaluations_before_freeze": 0,
+  "files": {
+    "code/submission.py": "2651b94ae5492a12dfee398ca21d4f38e107873bd3f2118334d97e86e44a0dff",
+    "code/features.py": "c91a0581449274a2f5dc2f728fa1768091a290b696da2a2047a1aae59a551493",
+    "code/common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "code/predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "code/score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "code/checkpoints/final/bce17.npz": "d00003e1d323e8766280cfb6ce2e4947d2acd054217c31af69334d4f24dd9858",
+    "code/checkpoints/final/ensemble.json": "78efda7609083278c037785be2e8bc35ac53ee13f7b83f203f0f88b4694d20aa",
+    "code/checkpoints/final/full73.npz": "6a904a673457049f9f058fc8b2e0542857d319e9dca9721a72fd0d1205ea3975",
+    "code/checkpoints/final/small42.npz": "9952039d9149eba80a4ac56a8f6885b82c7e4734339c630fbd1f425739df485a"
+  }
+}

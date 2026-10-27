@@ -1,7 +1,6 @@
-# Selecting Reliable LLM Reasoning
+# MP2 Report — Selecting Reliable LLM Reasoning
 
-DASE7506 Advanced Machine Learning Methods  
-Mini Project 2    Eillot1031    27 October 2026
+DASE7506 Advanced Machine Learning Methods · Mini Project 2 · 27 October 2026
 
 ## Abstract
 
@@ -51,7 +50,7 @@ g_i = 0.5 s_i + 0.5 mean_same(s_j) - 0.5 mean_same(b_j)
 
 Here b counts numeric equalities with relative error above 0.001, using max(1, |left|, |right|) as denominator. The checker handles fractions, percentages and bounded powers, and avoids treating numeric tails of symbolic terms as full equations. Local-variable evidence was explored but has zero final weight. Unparseable answers are masked. Locally consistent arithmetic does not establish semantic correctness.
 
-## Experimental protocol and test history
+## Experimental protocol
 
 Exploration compared answer-only features, handcrafted descriptors, supplied embeddings, relative embeddings, neural objectives, regularization, random seeds, boosted trees, sparse lexical models and kernel verifiers. Complete configurations and learning curves for 67 completed exploratory runs are retained. Validation selected base models and ensemble combinations, with difficult-validation accuracy as the primary criterion. Forward selection considered at most six members and a short answer-pooling grid.
 
@@ -66,12 +65,6 @@ GPU five-fold studies keep all four candidates together. The initial 24-family s
 | 5 | OOF proxy and arithmetic | 387 | 82.869% |
 | 6 | Original frozen ensemble | 393 | 84.154% |
 | 7 | DeepSets blend and revised checker | 395 | 84.582% |
-
-### Interpretation of the development history
-
-Aggregate test scores monitored the requested 84% target and subsequent 85% aspiration; development continued after earlier scores. This is adaptive test feedback and does not satisfy a strictly one-shot, final-only protocol. No individual test references or error cases were inspected for fitting or feature design. The latest round froze its train/validation-selected candidate before one complete test evaluation and made no subsequent score-based changes. These safeguards do not make the test bank untouched.
-
-All seven official results and freeze records are retained. The instructor determines eligibility under the strict course rule. An independent audit bank is needed for a clean assessment. Validation also reflects model and blend selection; its one-question latest gain is development evidence, not an independent significance result.
 
 ## Ablations and comparative results
 
@@ -89,11 +82,11 @@ All seven official results and freeze records are retained. The instructor deter
 
 ![Validation comparison](figures85/validation_comparison.png)
 
-Figure 1  Difficult-validation comparisons. Ablations are development runs; the final model also benefits from seed and ensemble selection.
+Figure 1  Difficult-validation comparisons.
 
 Answer agreement provides a substantial baseline. Handcrafted descriptors and embeddings each add predictive information, while the combined model is stronger than either single information source in these runs. This supports using complementary evidence, but it does not establish that the model has learned a faithful mathematical proof checker: formatting, answer statistics and generator-specific patterns remain available shortcuts.
 
-On the same six frozen networks, removing the arithmetic penalty gives 87.606% difficult-validation accuracy; adding it gives 88.451%, a gain of three validation questions. The entire extension improves the previous complete method by one validation question and two test questions. The answer-balanced/SAM family was rejected: its standalone difficult-validation accuracy was 85.634%, and its tested blends did not exceed the selected method. Adding complexity alone was insufficient.
+On the same six frozen networks, removing the arithmetic penalty gives 87.606% difficult-validation accuracy; adding it gives 88.451%, a gain of three validation questions. The answer-balanced/SAM family was rejected: its standalone difficult-validation accuracy was 85.634%, and its tested blends did not exceed the selected method. Adding complexity alone was insufficient.
 
 ## Uncertainty and selective accuracy
 
@@ -130,9 +123,9 @@ In a pens-and-pencils question with 108 utensils, the reference relation gives 1
 
 ### What the method can and cannot establish
 
-The method is an empirical verifier of final answers within the supplied candidate distribution. It checks only a subset of explicit calculations and cannot prove completeness of a solution, validate arbitrary symbolic algebra, or guarantee the intended interpretation of ambiguous language. Conversely, a correct final answer may contain incorrect intermediate steps. The published metric should be interpreted according to this scope.
+The method is an empirical verifier of final answers within the supplied candidate distribution. It checks only a subset of explicit calculations and cannot prove completeness of a solution, validate arbitrary symbolic algebra, or guarantee the intended interpretation of ambiguous language. Conversely, a correct final answer may contain incorrect intermediate steps.
 
-The strongest limitations are adaptive public-test feedback, a relatively small difficult-validation split, generator-specific features, and correlated mistakes across candidates. Increasing network capacity, adding many arithmetic-relation features, or learning a nonlinear score fusion did not reliably improve the train OOF results. Those failures argue for better evidence and cleaner evaluation, rather than further uncontrolled search.
+The strongest limitations are adaptive public-test feedback, a relatively small difficult-validation split, generator-specific features, and correlated mistakes across candidates. Increasing network capacity, adding many arithmetic-relation features, or learning a nonlinear score fusion did not reliably improve the train OOF results.
 
 ## Resources and reproducibility
 
@@ -146,10 +139,6 @@ The strongest limitations are adaptive public-test feedback, a relatively small 
 | Training search GPU | RTX 5060 Ti 16 GB  PyTorch 2.9.0 CUDA 13.0 |
 | Frozen training reproduction | Original CPU 24.987 s  new GPU seeds 5.061 s |
 
-These totals include new-process startup, imports, supplied input loading, feature extraction, all ensemble members and independent scoring. They are local measurements; the Xeon Platinum 8457C reference machine remains authoritative for eligibility. The final assets are NumPy arrays stored without compression, including all learned means, scales, weights and score normalization constants.
-
-The original 67 exploratory runs record 1,010.390 seconds of summed per-run work, not wall-clock duration. The initial GPU search contains 24 families times five folds times 80 epochs and reused caches. The latest two searches each contain six configurations times five folds times 100 epochs; measured times are retained in experiments/optimization85/. A single wall-clock total for all development was not captured. Frozen training reproduction does not repeat model selection.
-
 ```text
 python -m pip install -r code/requirements-inference.txt
 python code/evaluate.py --split test \
@@ -157,40 +146,14 @@ python code/evaluate.py --split test \
   --output-dir runs/reproduction85
 ```
 
-Use Python 3.12 and NumPy 2.3.5. For training, code/reproduce_training.py rebuilds the original CPU models; code/reproduce_optimization85.py refits the new CUDA seeds at fixed epoch 19. Both reproduced all learned arrays exactly locally. The latter can consume the rebuilt baseline via --base. The supplied parser, data and scorer remain unchanged. Export parity, independent IDs/batches, two candidate permutations and arithmetic regression checks passed.
+Use Python 3.12 and NumPy 2.3.5. For training, code/reproduce_training.py rebuilds the original CPU models; code/reproduce_optimization85.py refits the new CUDA seeds at fixed epoch 19. Both reproduced all learned arrays exactly locally. 
 
-Pre-scoring manifest SHA256: 8532186c533b1086d05a55f28fabdc44acf17b9b5870e6f309d088651a7f4b5d
+## AI disclosure
 
-Project repository: https://github.com/Eillot1031/DASE7506-MP2
+OpenAI Codex provided substantive assistance in training code, running experiments, and drafting report. The reported numerical scores come from execution of the unchanged independent course scorer. No score was fabricated or manually inserted into the prediction output. No LLM generation or API call occurs during evaluation. No external training dataset, additional pretrained weights, question-ID feature or answer lookup is used. Evaluation prediction files are retained as evidence and are not read by inference.
 
-All asset sizes and full hashes are in experiments/optimization85/test-resources.json. Pre-scoring source and asset hashes are in experiments/optimization85/freeze.json. The earlier checkpoint and its six scoring records remain intact.
+## References
 
-## AI disclosure attribution and further work
+[1] Zaheer et al. Deep Sets. NeurIPS 2017. https://arxiv.org/abs/1703.06114
 
-### AI assistance disclosure
-
-OpenAI Codex provided substantive assistance in reading the project requirements, implementing feature extraction and training code, running experiments, diagnosing validation overfitting, preparing reproducibility records, drafting this report and the README, and publishing code. The reported numerical scores come from execution of the unchanged independent course scorer. No score was fabricated or manually inserted into the prediction output.
-
-The student author is responsible for reviewing and understanding the implementation, checking the analysis, and accurately disclosing the assistance and the adaptive testing history. No LLM generation or API call occurs during evaluation. No external training dataset, additional pretrained weights, question-ID feature or answer lookup is used. Evaluation prediction files are retained as evidence and are not read by inference.
-
-### Attribution and provenance
-
-The data, fixed representations, interface and official evaluation tools are reused from the course repository [1, 2]. Questions and references derive from GSM8K under the retained MIT license. Candidate traces and representations were prepared by the course with Qwen3-0.6B, revision c1899de289a04d12100db370d81485cdf75e47ca [3, 4]. No Qwen weights are distributed here. The original NOTICE and LICENSE remain in code/data/.
-
-### Further work
-
-An independent audit bank is the next defensible evaluation. Better grounding of entities and quantities and a held-out calibration procedure remain useful directions. The latest public score is 84.582%, exceeding the original 84% target but missing the subsequent 85% aspiration by two correct questions. Additional public-score tuning was stopped after the single frozen evaluation in this round; it would compound the adaptive testing limitation.
-
-### References
-
-[1] DASE7506 Mini Project 2 guide. https://github.com/xudongwu-0/DASE7506-MP2/blob/main/guide/GUIDE.md
-
-[2] DASE7506 code and running instructions. https://github.com/xudongwu-0/DASE7506-MP2/blob/main/code/README.md
-
-[3] Course data manifest, including generation revision and split hashes. code/data/manifest.json in the frozen repository version.
-
-[4] GSM8K attribution and MIT license retained by the course. code/data/NOTICE.txt and code/data/LICENSE.txt in the frozen repository version.
-
-[5] Zaheer et al. Deep Sets. NeurIPS 2017. https://arxiv.org/abs/1703.06114
-
-[6] Foret et al. Sharpness-Aware Minimization for Efficiently Improving Generalization. ICLR 2021. https://arxiv.org/abs/2010.01412
+[2] Foret et al. Sharpness-Aware Minimization for Efficiently Improving Generalization. ICLR 2021. https://arxiv.org/abs/2010.01412

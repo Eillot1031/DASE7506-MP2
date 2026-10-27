@@ -1,0 +1,215 @@
+{
+  "comparisons": [
+    {
+      "name": "First candidate",
+      "accuracy": 78.19548872180451,
+      "hard_accuracy": 54.929577464788736,
+      "hard_n": 355,
+      "correct": 624
+    },
+    {
+      "name": "Majority vote",
+      "accuracy": 86.2155388471178,
+      "hard_accuracy": 69.01408450704226,
+      "hard_n": 355,
+      "correct": 688
+    },
+    {
+      "name": "Question and answer",
+      "accuracy": 88.47117794486215,
+      "hard_accuracy": 74.08450704225352,
+      "hard_n": 355,
+      "correct": 706
+    },
+    {
+      "name": "Handcrafted descriptors",
+      "accuracy": 90.97744360902256,
+      "hard_accuracy": 79.71830985915493,
+      "hard_n": 355,
+      "correct": 726
+    },
+    {
+      "name": "Embedding only",
+      "accuracy": 91.72932330827068,
+      "hard_accuracy": 81.40845070422536,
+      "hard_n": 355,
+      "correct": 732
+    },
+    {
+      "name": "Relative embeddings",
+      "accuracy": 91.72932330827068,
+      "hard_accuracy": 81.40845070422536,
+      "hard_n": 355,
+      "correct": 732
+    },
+    {
+      "name": "Combined single network",
+      "accuracy": 92.35588972431077,
+      "hard_accuracy": 82.8169014084507,
+      "hard_n": 355,
+      "correct": 737
+    },
+    {
+      "name": "Final frozen ensemble",
+      "accuracy": 94.73684210526316,
+      "hard_accuracy": 88.16901408450704,
+      "hard_n": 355,
+      "correct": 756
+    }
+  ],
+  "pooling_ablation_without_arithmetic": [
+    {
+      "weight": 0.0,
+      "accuracy": 94.23558897243107,
+      "hard_accuracy": 87.04225352112677,
+      "hard_n": 355,
+      "correct": 752
+    },
+    {
+      "weight": 0.5,
+      "accuracy": 94.48621553884712,
+      "hard_accuracy": 87.6056338028169,
+      "hard_n": 355,
+      "correct": 754
+    },
+    {
+      "weight": 1.0,
+      "accuracy": 94.73684210526316,
+      "hard_accuracy": 88.16901408450704,
+      "hard_n": 355,
+      "correct": 756
+    }
+  ],
+  "arithmetic_ablation": {
+    "without": {
+      "accuracy": 94.48621553884712,
+      "hard_accuracy": 87.6056338028169,
+      "hard_n": 355,
+      "correct": 754
+    },
+    "with": {
+      "accuracy": 94.73684210526316,
+      "hard_accuracy": 88.16901408450704,
+      "hard_n": 355,
+      "correct": 756
+    }
+  },
+  "coverage": [
+    {
+      "coverage": 0.2507042253521127,
+      "accuracy": 100.0,
+      "n": 89
+    },
+    {
+      "coverage": 0.5014084507042254,
+      "accuracy": 97.19101123595506,
+      "n": 178
+    },
+    {
+      "coverage": 0.752112676056338,
+      "accuracy": 93.25842696629213,
+      "n": 267
+    },
+    {
+      "coverage": 1.0,
+      "accuracy": 88.16901408450704,
+      "n": 355
+    }
+  ],
+  "uncalibrated_reliability_bins": [
+    {
+      "n": 71,
+      "confidence": 0.4770140798772134,
+      "accuracy": 0.7605633802816901
+    },
+    {
+      "n": 71,
+      "confidence": 0.6188557178515992,
+      "accuracy": 0.7746478873239436
+    },
+    {
+      "n": 71,
+      "confidence": 0.7555502778681564,
+      "accuracy": 0.9295774647887324
+    },
+    {
+      "n": 71,
+      "confidence": 0.8933294199231533,
+      "accuracy": 0.9436619718309859
+    },
+    {
+      "n": 71,
+      "confidence": 0.9750353361767928,
+      "accuracy": 1.0
+    }
+  ],
+  "uncalibrated_ece": 0.13773317450568737,
+  "breakdown": [
+    {
+      "distinct_answers": 2,
+      "n": 227,
+      "final_accuracy": 92.51101321585902,
+      "majority_accuracy": 77.09251101321586
+    },
+    {
+      "distinct_answers": 3,
+      "n": 108,
+      "final_accuracy": 83.33333333333334,
+      "majority_accuracy": 60.18518518518518
+    },
+    {
+      "distinct_answers": 4,
+      "n": 20,
+      "final_accuracy": 65.0,
+      "majority_accuracy": 25.0
+    }
+  ],
+  "error_cases": [
+    {
+      "question": "On a particular day, Rose's teacher read the register and realized there were twice as many girls as boys present on that day. The class has 250 students, and all the 140 girls were present. If all the absent students were boys, how many boys were absent that day?",
+      "gold_answer": "40",
+      "candidate_answers": [
+        "180",
+        "180",
+        "180",
+        "40"
+      ],
+      "selected": 2,
+      "margin": 2.2349806427955627,
+      "selected_reasoning": "We are given the following:\n\n- Total number of students = 250  \n- Number of girls present = 140  \n- Number of girls is **twice** as many as boys present.  \n- All the **absent students** are boys.  \n- We are to find how many **boys were absent**.\n\n---\n\n### Step 1: Let the number of boys present be $ x $.\n\nSince there are **twice as many girls as boys present**, we have:\n\n$$\n\\text{Number of girls present} = 2x\n$$\n\nBut we are told the number of girls present is **140**. So:\n\n$$\n2x = 140 \\Rightarrow x = 70\n$$\n\nSo, there are **70 boys present**.\n\n---\n\n### Step 2: Total number of students is 250.\n\n$$\n\\text{Total students} = \\text{Present students} + \\text{Absent students}\n$$\n\n$$\n250 = 70 + \\text{Absent students}\n$$\n\n$$\n\\text{Absent students} = 250 - 70 = 180\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{180}\n$$",
+      "correct_reasoning": "We are given:\n\n- Total students = 250  \n- Number of **present** students = 140  \n- Number of **present** girls = 140 (so number of boys = 250 - 140 = 110)  \n- Number of **present** girls is **twice** the number of **present** boys.\n\nLet the number of **present** boys be $ x $. Then the number of **present** girls is $ 2x $.\n\nSince there are 140 present girls, we have:\n$$\n2x = 140 \\Rightarrow x = 70\n$$\n\nSo, the number of **absent** boys is:\n\n$$\n250 - 140 - 70 = 40\n$$\n\n### Final Answer:\n$$\n\\boxed{40}\n$$"
+    },
+    {
+      "question": "Yun had 20 paperclips initially, but then lost 12. Marion has 1/4 more than what Yun currently has, plus 7. How many paperclips does Marion have?",
+      "gold_answer": "9",
+      "candidate_answers": [
+        "9",
+        "17",
+        "17",
+        "17"
+      ],
+      "selected": 3,
+      "margin": 2.120690882205963,
+      "selected_reasoning": "We are given the following:\n\n- Yun had **20 paperclips** initially.\n- Then lost **12**, so **Yun currently has** $ 20 - 12 = 8 $ paperclips.\n\n- Marion has **$ \\frac{1}{4} $ more than what Yun currently has, plus 7**.\n\nSo, we calculate:\n\n$$\n\\text{Marion's paperclips} = 8 + \\left( \\frac{1}{4} \\times 8 \\right) + 7\n$$\n\n$$\n= 8 + 2 + 7 = 17\n$$\n\n### Final Answer:\n$$\n\\boxed{17}\n$$",
+      "correct_reasoning": "We are given the following information:\n\n- Yun had **20 paperclips initially**.\n- Yun **lost 12**, so Yun now has:  \n  $$\n  20 - 12 = 8 \\text{ paperclips}\n  $$\n\n- Marion has:  \n  $$\n  \\frac{1}{4} \\text{ more than what Yun currently has, plus } 7\n  $$  \n  So,  \n  $$\n  \\frac{1}{4} \\times 8 + 7 = 2 + 7 = 9\n  $$\n\n### Final Answer:\n$$\n\\boxed{9}\n$$"
+    },
+    {
+      "question": "Issac has to buy pens and pencils for the upcoming school year. Issac buys 108 writing utensils total. He buys 12 more than 5 times the number of pencils than pens. How many pens did Issac buy?",
+      "gold_answer": "16",
+      "candidate_answers": [
+        "16",
+        "92",
+        "92",
+        "16"
+      ],
+      "selected": 2,
+      "margin": 2.059916839003563,
+      "selected_reasoning": "Let\u2019s define:\n\n- Let $ x $ be the number of pens.\n- Let $ y $ be the number of pencils.\n\nWe are told:\n\n1. Total writing utensils: $ x + y = 108 $\n2. He buys 12 more than 5 times the number of pencils than pens: $ 5y + 12 = x $\n\n---\n\nWe now solve the system of equations:\n\n1. $ x + y = 108 $\n2. $ x = 5y + 12 $\n\nSubstitute equation (2) into equation (1):\n\n$$\n(5y + 12) + y = 108\n$$\n\n$$\n6y + 12 = 108\n$$\n\n$$\n6y = 96\n$$\n\n$$\ny = 16\n$$\n\nNow substitute $ y = 16 $ back into equation (2):\n\n$$\nx = 5(16) + 12 = 80 + 12 = 92\n$$\n\n---\n\n### Final Answer:\n$$\n\\boxed{92}\n$$",
+      "correct_reasoning": "Let\u2019s define:\n\n- Let $ p $ be the number of **pens**.\n- Let $ w $ be the number of **writing utensils**.\n\nFrom the problem:\n\n1. Total writing utensils:  \n   $ p + w = 108 $\n\n2. He buys **12 more than 5 times the number of pencils** than pens:  \n   $ 5p + 12 = w $\n\nWe now solve the system of equations:\n\n- $ p + w = 108 $\n- $ w = 5p + 12 $\n\nSubstitute $ w = 5p + 12 $ into the first equation:\n\n$$\np + (5p + 12) = 108\n$$\n\n$$\n6p + 12 = 108\n$$\n\n$$\n6p = 96\n$$\n\n$$\np = 16\n$$\n\n### Final Answer:\n$$\n\\boxed{16}\n$$"
+    }
+  ],
+  "vs_majority_hard": {
+    "fixed": 81,
+    "regressed": 13
+  }
+}
